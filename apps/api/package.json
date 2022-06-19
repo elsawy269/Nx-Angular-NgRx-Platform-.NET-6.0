@@ -1,0 +1,14 @@
+{
+  "name": "EMasters demo",
+  "version": "0.0.1",
+  "description": "A POS SYSTEM ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dotnet:run",
+    "dotnet:run": "dotnet run --launch-profile Api",
+    "dotnet:run:prod": "dotnet run --launch-profile ApiProduction"
+  },
+
+  "author": "EMasters demo"
+
+}

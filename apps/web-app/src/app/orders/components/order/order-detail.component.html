@@ -1,0 +1,24 @@
+<mat-spinner [diameter]="30" *ngIf="loading; else tableBlock"></mat-spinner>
+
+<ng-template #tableBlock>
+
+  <mat-grid-list cols="4"  rowHeight="1:5">
+    <mat-grid-tile colspan="3">
+      <app-product-table [products]="order.products"></app-product-table>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <ng-container *ngIf="order">
+        <app-customer-info [customer]="order.customer"></app-customer-info>
+
+        <app-billing-details [order]="order"></app-billing-details>
+      </ng-container>
+
+      <div class="margin-top">
+        <button class="btn" mat-raised-button color="warn">Pay Now</button>
+        <button  class="btn" mat-raised-button color="link">Cancel</button>
+      </div>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</ng-template>

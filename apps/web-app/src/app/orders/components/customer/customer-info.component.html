@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-title>
+    {{ customer.name }} | <span class="font-gray"> {{ customer.id }} </span>
+    <hr />
+  </mat-card-title>
+
+  <mat-card-content>
+    <div>
+      <span>
+        <span class="font-gray"> Avg Purchase : </span>
+        {{ customer.avgPurchase | currency: 'Rs' }}
+        <br />
+        <span class="font-gray"> Credit Balance : </span
+        >{{ customer.creditBalance | currency: 'Rs' }}
+        <br />
+
+        <span class="font-gray"> Balance Due : </span
+        >{{ customer.balanceDue | currency: 'Rs' }}
+        <br />
+      </span>
+      <span class="Loyalty">
+        <div class="padding-10">
+          <span class="font-gray"> Loyalty Points : </span> <br />{{
+            customer.loyaltyPoints
+          }}
+        </div>
+      </span>
+    </div>
+
+    <div class="margin-top">
+      <span class="font-bold"> First Visit : </span>
+      <span class="days-color">{{ customer.firstVisit }}</span>
+
+      <span class="float-right">
+        <span class="font-bold"> Last Visit : </span>
+        <span class="days-color"> {{ customer.lastVisit }}</span>
+      </span>
+    </div>
+  </mat-card-content>
+</mat-card>

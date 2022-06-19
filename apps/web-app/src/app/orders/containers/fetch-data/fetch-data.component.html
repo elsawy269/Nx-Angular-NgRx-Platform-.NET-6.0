@@ -1,0 +1,18 @@
+<!-- <app-page-toolbar [title]="title$ | async">
+  <mat-form-field>
+    <input matInput
+           #count
+           type="number"
+           placeholder="Forecast Days"
+           (keyup.enter)="getForecasts(+count.value)"
+           [value]="count$ | async" />
+  </mat-form-field>
+  <app-page-toolbar-button (click)="getForecasts(+count.value)"
+                           tooltip="Get Forecasts">
+    <mat-icon>refresh</mat-icon>
+  </app-page-toolbar-button>
+</app-page-toolbar> -->
+<app-page-container *ngIf="order$ | async as order">
+  <app-order-detail [loading]="loading$ | async"
+                      [data]="order"></app-order-detail>
+</app-page-container>

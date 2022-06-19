@@ -1,0 +1,26 @@
+
+      <mat-card >
+        <mat-card-title>
+          Billing Details
+       </mat-card-title>
+
+        <mat-card-content>
+          <div>
+         <span class="font-bold">   Sub Total : </span><span class="float-right"> {{order.subTotal | currency:'Rs'}} </span>
+          </div>
+          <div>
+            <span class="font-bold">  Total Tax: </span> <span class="float-right">  {{order.totalTax | currency:'Rs'}} </span>
+          </div>
+          <div>
+            <span class="font-bold">   Discount : </span><span class="float-right">  {{order.discount | currency:'Rs'}} </span>
+          </div>
+
+
+        </mat-card-content>
+        <mat-card-footer>
+          <hr>
+          <span class="font-bold"> Gross Total :  </span><span class="float-right"> {{order.grossTotal | currency:'Rs'}} </span>
+        </mat-card-footer>
+      </mat-card>
+
+

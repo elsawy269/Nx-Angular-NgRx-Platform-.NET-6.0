@@ -3,9 +3,6 @@
 
 This is basic demo of how to use a full stack [Nx monorepo](https://nx.dev/angular) with [Angular](https://angular.io) and .NET 6.0 with [Microsoft.AspNetCore.SpaServices.Extensions](https://docs.microsoft.com/en-us/aspnet/core/client-side/spa/angular) and a demo Azure pipeline for Azure DevOps.
 
-## Demo
-
-See a live demo here: [https://angularclinetcorengrxstarter.azurewebsites.net/](https://angularclinetcorengrxstarter.azurewebsites.net/)
 
 ## Getting Started?
 
